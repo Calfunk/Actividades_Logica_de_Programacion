@@ -28,7 +28,26 @@
     imcCalculado = calcularImc(pesoInformado,alturaInformada)
 
 
-     texto (nombreInformado + " tu IMC es de " + imcCalculado);
+     texto(nombreInformado + " tu IMC es de " + parseInt(imcCalculado));
+
+     if (imcCalculado < 18.5) {
+        alert("IMC bajo, haz mas ejercio y come mejor");
+      }
+
+     if (imcCalculado >= 18.5) {
+          if (imcCalculado < 24.9) {
+          alert("IMC normal, haz mas ejercio y continua con tu dieta");
+     }
+     }
+     if (imcCalculado >= 25) {
+          if (imcCalculado < 29.9) {
+          alert("Sobrepeso, te falta cardio y comer mejor");
+     }
+     }
+
+     if (imcCalculado >= 30) {
+          alert( nombreInformado + " , cuidate. La vida es una sola y come mejor. Tu IMC indica una OBESIDAD");
+     }
 
 
 
