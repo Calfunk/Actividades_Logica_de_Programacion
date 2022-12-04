@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>ESTRELLAS</h1>
+
+ <script>
+         // Funcion, imprimir  es remplazada por texto.
+    function saltarLinea() {
+     document.write("<br>");
+     document.write("<br>");
+
+     }
+
+    function texto(frase) {
+     document.write("<big>" + frase + "</big>");
+     saltarLinea();
+     }
+
+    for(var lineas = 1; lineas <= 3; lineas++) {
+
+      for(var columnas = 1; columnas <= 10; columnas++){
+        document.write("*");
+      }
+       saltarLinea();
+
+    }
+
+
+  texto("FIN");
+
+</script>

@@ -1,0 +1,38 @@
+
+<meta charset="UTF-8">
+
+<h1>CALCULO DE MEDIA EN LAS EDADES DE UNA FAMILIA</h1>
+
+ <script>
+         // Funcion, imprimir  es remplazada por texto.
+    function saltarLinea() {
+     document.write("<br>");
+     document.write("<br>");
+     document.write("<br>");
+     }
+
+    function texto(frase) {
+     document.write("<big>" + frase + "</big>");
+     saltarLinea();
+     }
+
+        var edadPapa = 42;
+        var edadMama = 38;
+        var edadHermano1 = 15;
+        var edadHermano2 = 12;
+
+        texto("En familia comun se compone por 4 integrandes: Hector, Paola, Fernando y Francisca.")
+
+        texto("Hecto, el padre, tiene " + edadPapa + " años")
+        texto("Paola, la madre, tiene " + edadMama + " años")
+        texto("Fernando, el hijo mayor, tiene " + edadHermano1 + " años")
+        texto("Francisca, la hija menor, tiene " + edadHermano2 + " años")
+
+         var totalEdad = edadPapa + edadMama + edadHermano1 + edadHermano2 ;
+
+           var promedioEdad = totalEdad / 4 ;
+
+            texto("La edad promedio de esta familia es " + promedioEdad)
+
+//CODIGO PROTIO DE EDUARDO CALFUNAO V.
+</script>

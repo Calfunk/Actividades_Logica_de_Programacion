@@ -15,20 +15,24 @@
      saltarLinea();
     }
 
-     var numeroPensado = Math.round(Math.random() * 33);
-     var numeroLanzado = prompt("ingrese un numero del 0 la 33");
+     var numeroPensado = Math.round(Math.random() * 10);
+     var intentos = 3;
+     var contador = 1;
 
-      if (numeroPensado == numeroLanzado){
-           texto("Efectivamente el nuemero es " + numeroPensado);
+     while(contador <= intentos){
+     var numeroLanzado = prompt("ingrese un numero del 0 la 10");
+
+            if (numeroPensado == numeroLanzado){
+             alert("Efectivamente el nuemero es " + numeroPensado +". En el intento numero: " + contador + ".");
+             break;
+            }
+
+            else   {
+             alert("Erraste. El nuemero pensado era " + numeroPensado);
+            }
+            contador++;
       }
 
-     if (numeroLanzado < numeroPensado){
-           texto("Te falto. El nuemero pensado era " + numeroPensado + ". Ahora, presiona F5");
-      }
-
-     if (numeroLanzado > numeroPensado){
-           texto("Te pasaste. El nuemero pensado era " + numeroPensado + ". Ahora, presiona F5");
-      }
-
-
+      texto("GRACIAS POR JUGAR")
+      
  </script>

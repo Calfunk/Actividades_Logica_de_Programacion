@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var limite = 3;
+    var inentos = 1;
+
+    while(inentos <= limite){
+
+      var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+
+      var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+      if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+         document.write(" ¡BIENVENIDO(A)! ")
+        break;
+      } else {
+        alert("inicio de sesión inválido. Favor intente de nuevo");
+         document.write("TU SESION A SIDO BLOQUEADA ");
+      }
+      inentos++;
+    }
+</script>

@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>¡AÑOS DE MUNDIALES!</h1>
+
+ <script>
+         // Funcion, imprimir  es remplazada por texto.
+    function saltarLinea() {
+     document.write("<br>");
+     document.write("<br>");
+     document.write("<br>");
+    }
+
+    function texto(frase) {
+     document.write("<big>" + frase + "</big>");
+     saltarLinea();
+    }
+
+    var añoMundial = 1930;
+    
+
+    alert("Hubo mundial de FIFA en el año " + añoMundial );
+
+     while (añoMundial < 2022) {
+
+        texto("Hubo mundial de FIFA en el año " + añoMundial );
+        añoMundial = añoMundial + 4;
+
+
+        }
+
+
+        texto("FIN")
+ </script>
